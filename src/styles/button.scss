@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+
+  background-color: #27ae60;
+  color: #fefefe;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: .5s;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+  }
+
+  &:hover {
+    box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.46);
+  }
+}
