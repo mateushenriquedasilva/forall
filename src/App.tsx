@@ -9,8 +9,8 @@ function App() {
       <BrowserRouter>
         <AuthContextProvider>
           <Routes>
-            <Route path="/chat" element={<Home />} />
-            <Route path="/" element={<Chat />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/forall" element={<Chat />} />
           </Routes>
         </AuthContextProvider>
       </BrowserRouter>
