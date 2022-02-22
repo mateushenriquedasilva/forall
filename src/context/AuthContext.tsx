@@ -8,6 +8,7 @@ import {
 import toast from "react-hot-toast";
 
 type User = {
+  id: string;
   name: string | null;
   avatar: string | null;
 };
@@ -29,12 +30,13 @@ export function AuthContextProvider({ children }: AuntContextProviderProps) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        const { displayName, photoURL } = user;
+        const { uid, displayName, photoURL } = user;
 
         if (!displayName) {
         }
 
         setUser({
+          id: uid,
           name: displayName,
           avatar: photoURL,
         });
@@ -58,6 +60,7 @@ export function AuthContextProvider({ children }: AuntContextProviderProps) {
       }
 
       setUser({
+        id: uid,
         name: displayName,
         avatar: photoURL,
       });
@@ -67,7 +70,6 @@ export function AuthContextProvider({ children }: AuntContextProviderProps) {
     }else{
       toast.error("Login error!")
     }
-
   }
 
   return (
