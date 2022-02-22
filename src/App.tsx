@@ -3,14 +3,6 @@ import { AuthContextProvider } from "./context/AuthContext";
 import { Chat } from "./pages/Chat";
 import { Home } from "./pages/Home";
 
-export const PriveteRoute = ({ children }: any) => {
-  if (localStorage.getItem("user")) {
-    return children;
-  }
-
-  return <Navigate to="/" />;
-};
-
 function App() {
   return (
     <div>
@@ -18,14 +10,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="" element={<Home />} />
-            <Route
-              path="/chat"
-              element={
-                <PriveteRoute>
-                  <Chat />
-                </PriveteRoute>
-              }
-            />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
         </BrowserRouter>
       </AuthContextProvider>
