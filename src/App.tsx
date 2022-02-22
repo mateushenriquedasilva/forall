@@ -10,6 +10,7 @@ function App() {
         <AuthContextProvider>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/test" />
             <Route path="/chat" element={<Chat />} />
           </Routes>
         </AuthContextProvider>
