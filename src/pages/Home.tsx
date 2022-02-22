@@ -12,7 +12,7 @@ export function Home() {
 
   async function signInWithGoogle() {
     await singIn();
-    navigate("/forall");
+    navigate("chat");
   }
 
   return (
