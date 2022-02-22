@@ -66,7 +66,6 @@ export function AuthContextProvider({ children }: AuntContextProviderProps) {
       });
 
       toast.success('Login done successfully!')
-      localStorage.setItem("user", JSON.stringify(user));
     }else{
       toast.error("Login error!")
     }
