@@ -75,7 +75,7 @@ export function Chat() {
                 >
                   <div className="menssage">
                     <img src={menssage.avatarAuthor || userIcon} alt="foto do usuário" />
-                    <p>{menssage?.message}</p>
+                    <p><span>{menssage?.author}</span>{menssage?.message}</p>
                   </div>
                 </div>
               );    

@@ -46,7 +46,7 @@
       .menssage-author {
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: 0.6rem;
         padding: 1rem;
 
@@ -61,8 +61,16 @@
           }
 
           p {
+            display: flex;
+            flex-direction: column;
             padding: 0.2rem 0.9rem;
             border-radius: 1rem;
+            align-items: flex-end;
+
+            span {
+              font-size: .5rem;
+              color: #333;
+            }
           }
         }
       }
@@ -71,6 +79,9 @@
 
         .menssage {
           flex-direction: row-reverse;
+          p {
+            align-items: flex-end;
+          }
         }
 
         p {
@@ -82,6 +93,11 @@
       .menssage-user {
         justify-content: flex-start;
 
+        .menssage {
+          p {
+            align-items: flex-start;
+          }
+        }
         p {
           background-color: #cccccc;
           color: #333;
