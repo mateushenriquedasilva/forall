@@ -6,14 +6,14 @@ import { Home } from "./pages/Home";
 function App() {
   return (
     <div>
-      <AuthContextProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <AuthContextProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/chat" element={<Chat />} />
           </Routes>
-        </BrowserRouter>
-      </AuthContextProvider>
+        </AuthContextProvider>
+      </BrowserRouter>
     </div>
   );
 }
