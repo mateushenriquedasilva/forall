@@ -9,7 +9,7 @@ function App() {
       <AuthContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/chat" element={<Chat />} />
           </Routes>
         </BrowserRouter>

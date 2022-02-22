@@ -47,7 +47,7 @@ export function Chat() {
         }
       }
     );
-  }, [onValue]);
+  }, []);
 
   function getMenssages(data: any) {
     setMessages(data);
