@@ -37,17 +37,17 @@ export function Chat() {
     }
   }
 
-  // useEffect(() => {
-  //   onValue(
-  //     ref(database, "message/"),
-  //     (snapshot) => {
-  //       if (snapshot.exists()) {
-  //         const data = snapshot.val();
-  //         getMenssages(Object.values(data));
-  //       }
-  //     }
-  //   );
-  // }, []);
+  useEffect(() => {
+    onValue(
+      ref(database, "message/"),
+      (snapshot) => {
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          getMenssages(Object.values(data));
+        }
+      }
+    );
+  }, []);
 
   function getMenssages(data: any) {
     setMessages(data);
