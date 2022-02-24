@@ -81,6 +81,7 @@ export function Chat() {
               );    
             })}
           </div>
+          <div ref={scroll}></div>
           <form onSubmit={sendMessage}>
             <input
               type="text"
