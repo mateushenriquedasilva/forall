@@ -1,6 +1,6 @@
 # Forall💬
 
-<a href="https://forall-one.vercel.app/chat">Acessar a demonstração</a>
+<a href="https://forall-one.vercel.app">Acessar a demonstração</a>
 
 <div>
   <img src="./imgs/forall.gif" />
